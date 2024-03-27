@@ -1,5 +1,7 @@
 # Code for the Paper: A Semi-supervised Nighttime Dehazing Baseline with Spatial-Frequency Aware and Realistic Brightness Constraint
 
+If you have any quesions, feel free to contact me. My <b> E-mail </b> and <b> WeChat </b> can be found at my homepage: [<A HREF="https://xiaofeng-life.github.io/">Homepage</A>]
+
 ## How to use this repo
 
 ### Step 1. Data Dreparation for the Nighttime Dehazing Task
