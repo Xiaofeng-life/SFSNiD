@@ -4,6 +4,7 @@ If you have any quesions, feel free to contact me. My <b> E-mail </b> and <b> We
 
 ## How to use this repo
 
+
 ### Step 1. Data Dreparation for the Nighttime Dehazing Task
 Download nighttime haze dataset from websites or papers. Follow the organization form below.
 ```
@@ -88,3 +89,6 @@ python inference_real_world.py --net SFSNiD \
                                --pth_path ../results/MyNightDehazing/train_SFSNiD_semi_supervised/RWNHC_MM23_PseudoLabel_kappa130/models/last_SFSNiD_/RWNHC_MM23_PseudoLabel.pth \
                                --dataset RWNHC_MM23
 ```
+
+## Update logs
++ 2024.03.27: The first version is uploaded. This is a temporary version from the server. CVPR's camera-ready is not yet complete.
