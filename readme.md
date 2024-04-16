@@ -94,3 +94,8 @@ python inference_real_world.py --net SFSNiD \
 
 ## Update logs
 + 2024.03.27: The first version is uploaded. This is a temporary version from the server. CVPR's camera-ready is not yet complete.
+
+
+## Reference Code
++ https://github.com/c-yn/SFNet
++ https://github.com/IDKiro/DehazeFormer
