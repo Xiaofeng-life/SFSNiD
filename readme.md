@@ -5,7 +5,7 @@ If you have any quesions, feel free to contact me. My <b> E-mail </b> and <b> We
 ## How to use this repo
 
 
-## The training code is provided in the (my) folder "task_SFSNiD"!!!!
+## The training code is provided in the (my) folder "task_SFSNiD"!!!! And the Supplemental Materials are in "supplemental_material.pdf"
 
 ### Step 1. Data Dreparation for the Nighttime Dehazing Task
 Download nighttime haze dataset from websites or papers. Follow the organization form below.
