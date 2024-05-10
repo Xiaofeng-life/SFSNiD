@@ -40,6 +40,11 @@ Download nighttime haze dataset from websites or papers. Follow the organization
             └── ...
 ```
 
+The datasets can be downloaded at
++ NHR, NHM, NHCL, NHCM, NHCD: https://github.com/chaimi2013/3R
++ UNREAL-HN: https://github.com/Owen718/NightHazeFormer
++ GTA5: https://github.com/jinyeying/night-enhancement
++ NightHaze and YellowHaze: https://github.com/nicholasly/HDP-Net
 
 ### Step 2. Supervised Training
 Follow step 1 to put the synthetic data into the corresponding folder.
