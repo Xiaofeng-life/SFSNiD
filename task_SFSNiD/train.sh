@@ -11,3 +11,6 @@ python train_SFSNiD_supervised.py --results_dir ../results/MyNightDehazing/train
 
 # train_SFSNiD_semi_supervised
 python train_SFSNiD_semi_supervised.py --results_dir ../results/MyNightDehazing/train_SFSNiD_semi_supervised/RWNHC_MM23_PseudoLabel_kappa130/ --img_h 256 --img_w 256 --train_batch_size 4 --dataset RWNHC_MM23_PseudoLabel --total_epoches 20 --lr 0.0001 --device cuda:0 --num_res 3 --patch_size 16 --bri_ratio 100 --bri_weight 20 --kappa 130
+
+# Full UNREAL-NH
+python train_SFSNiD_supervised_temp_UNREAL_NH_crop.py --results_dir ../results/MyNightDehazing/train_SFSNiD_supervised/UNREAL_NH_crop/ --img_h 480 --img_w 480 --train_batch_size 4 --dataset UNREAL_NH --total_epoches 100 --lr 0.0001 --device cuda:4 --num_res 3

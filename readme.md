@@ -46,6 +46,11 @@ The datasets can be downloaded at
 + GTA5: https://github.com/jinyeying/night-enhancement
 + NightHaze and YellowHaze: https://github.com/nicholasly/HDP-Net
 
+Division of the number of training and test images: 
+We provide the division ratios in the supplementary material.
+Currently, there is little research on nighttime dehazing. We noticed that different papers use different division ratios. 
+This may lead to different results for datasets such as NHM and NightHaze.
+
 ### Step 2. Supervised Training
 Follow step 1 to put the synthetic data into the corresponding folder.
 
@@ -73,6 +78,9 @@ python Generate_PseudoLabel.py --net SFSNiD \
                                --pth_path ../results/MyNightDehazing/train_SFSNiD_supervised/UNREAL_NH_NoSKy_Dark/models/last_SFSNiD_UNREAL_NH_NoSky_Dark.pth \
                                --dataset RWNHC_MM23
 ```
+Note: Images with sky can be deleted for better real-world performance. 
+The names of the images used are in UNREAL_NH_No_Sky_Dark.txt.
+
 
 #### step 3.2. semi-supervised training
 
@@ -97,8 +105,38 @@ python inference_real_world.py --net SFSNiD \
                                --dataset RWNHC_MM23
 ```
 
+
+### 5. Different Brightness in Real-world
+
+Recently, several researchers are interested in the “Figure 7. 
+Dehazed images obtained under different κ” in the paper.
+I retrained the ablation experiments with different kappa.
+I sent them the weights by email. 
+The settings of the ablation experiment are basically the same as those of the main experiment. 
+The epochs of the ablation experiment are less than those of the main experiment.
+However, the visual results are basically the same.
+
+If you are also interested, I put the weights of different kappa in 
+
+https://drive.google.com/file/d/1UmyAHup29wJJyqk2dTzd71BWtL7DNU-M/view?usp=drive_link
+
+This link contains all real-world dehazed images. 
+And the weights can be directly used for real-world inference.
+
+
+### 6. Discussions about Real-world 
+Some researchers emailed me to discuss nighttime dehazing: Is synthetic data reliable?
+
+My experience is: 
+On the synthetic dataset, as the iterations proceed, the PSNR and SSIM of the model tend to be stable/higher.
+However, in the real world, the real-world visual results obtained in different epochs may be unstable.
+After all, we do not have a metric to measure the real-world dehazing effect.
+So, my experience is that you should not use the metrics (PSNR) obtained on synthetic data to judge the dehazing performance in the real world. 
+Sometimes the conclusions obtained may be the opposite.
+
 ## Update logs
-+ 2024.03.27: The first version is uploaded. This is a temporary version from the server. CVPR's camera-ready is not yet complete.
++ 2024.03.27: The first version is uploaded. This is a temporary version from the server. 
++ CVPR's camera-ready is not yet complete.
 
 
 ## Reference Code

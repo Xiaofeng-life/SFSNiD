@@ -16,7 +16,7 @@ class InfOptions():
 
         self.parser.add_argument("--data_root_val_UNREAL_NH", type=str, default="F:/CXF_Code/dataset/processed_dataset/night_dehazing_dataset/UNREAL_NH/val/")
         self.parser.add_argument("--val_batch_size", type=int, default=1)
-        self.parser.add_argument("--pth_path", type=str, default="../results/MyNightDehazing/SFSNiD/UNREAL_NH/models/last_SFSNiD_UNREAL_NH.pth")
+        self.parser.add_argument("--pth_path", type=str, default="../results/MyNightDehazing/UNREAL_NH_crop/models/last_SFSNiD_UNREAL_NH.pth")
 
 
     def parse(self):
