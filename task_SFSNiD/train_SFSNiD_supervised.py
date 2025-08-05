@@ -108,11 +108,11 @@ if __name__ == "__main__":
     network = build_net(num_res=config.num_res).to(device)
     res_dir = config.results_dir
 
-    if os.path.exists(res_dir):
-        network.load_state_dict(torch.load(os.path.join(res_dir, "models", "last_SFSNiD_" + config.dataset + ".pth"),
-                                           map_location=config.device))
-    else:
-        make_train_dir(res_dir)
+    # if os.path.exists(res_dir):
+    #     network.load_state_dict(torch.load(os.path.join(res_dir, "models", "last_SFSNiD_" + config.dataset + ".pth"),
+    #                                        map_location=config.device))
+    # else:
+    make_train_dir(res_dir)
 
     loss_writer = LossWriter(os.path.join(res_dir, "losses"))
     save_config_as_json(save_path=os.path.join(res_dir, "configs", "config.txt"), config=config)
